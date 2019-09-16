@@ -1,4 +1,18 @@
-# Jest Crash Testing Tips
+# Jest Crash Testing
+
+## Install
+
+```
+npm init -y
+```
+```
+yarn add --dev jest
+```
+```
+yarn add axios -D
+```
+
+## Most useful 
 
 * using `test()`
 * using `describe()` to group
@@ -7,7 +21,7 @@
 * using `beforeAll` and `afterAll`
 * using `beforeEach` and `afterEach` 
 
-# Run
+## Run
 
 * Run Manually
   ```bash
