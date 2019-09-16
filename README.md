@@ -16,17 +16,23 @@ yarn add axios -D
 
 * Run Manually
   ```bash
-  yarn test 
-  ```
-  or
-  ```bash
   jest
   ```
 * Run test automatically on file save using watch option
-
   ```bash
   jest --watchAll
   ```
+* To update snapshot
+  ```
+  jest --updateSnapshot
+  ```
+  ```
+* To run test one by one to avoid same time access to DB
+  ```
+  jest --runInBand
+  ```
+
+hint: `it` is an alias of `test`.  
 
 ## Test Blocks
 * using `test()` single test
