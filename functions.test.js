@@ -30,7 +30,7 @@ test('Add 2+2 ', () => {
   expect(functions.add(2,2)).toBe(4);
 });
 
-test('Not 5', () => {
+test('Not 5 X', () => {
   expect(functions.add(2,2)).not.toBe(5);
 });
 
