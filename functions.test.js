@@ -34,7 +34,7 @@ test('Not 5', () => {
   expect(functions.add(2,2)).not.toBe(5);
 });
 
-test('Is Null', () => {
+test('Is Null ', () => {
   expect(functions.isNull()).toBeNull();
 });
 
