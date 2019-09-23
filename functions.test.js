@@ -26,7 +26,7 @@ describe('Check Names', ()=>{
   })
 })
 
-test('Add 2+2', () => {
+test('Add 2+2 ', () => {
   expect(functions.add(2,2)).toBe(4);
 });
 
