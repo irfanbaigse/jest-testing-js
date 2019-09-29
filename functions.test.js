@@ -1,4 +1,6 @@
 const functions = require('./functions');
+const axios = require('axios');
+
 
 // beforeEach(()=> initDB());
 // afterEach(()=> closeDB());
@@ -41,6 +43,7 @@ test('Is Null ', () => {
 test('user Name Leanne Graham', () => {
   expect.assertions(1);
    return functions.fetchUser().then(data => {
+     console.log(JSON.stringify(data));
     expect(data.name).toEqual('Leanne Graham');
   });
 });
@@ -50,3 +53,19 @@ test('user Name Leanne Graham', async () => {
   const data = await functions.fetchUser();
   expect(data.name).toEqual('Leanne Graham');
 });
+
+// jest.mock('axios');
+
+// test('should fetch users', ()=> {
+//   expect.assertions(1);
+//   const resp = {
+//     data: {name: "Irfan"}
+//   };
+
+//   axios.get.mockResolvedValue(resp);
+
+//   functions.fetchUser().then(data =>{
+//     console.log(data); 
+//     expect(data.name).toEqual('Irfan')
+//   })
+// })
